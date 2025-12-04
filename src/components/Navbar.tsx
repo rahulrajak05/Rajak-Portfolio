@@ -1,21 +1,11 @@
 import { useEffect, useState } from 'react'
 
 export default function Navbar() {
-  const [dark, setDark] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('darkMode') === 'true' || 
-             (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    }
-    return true
-  })
+
   const [activeSection, setActiveSection] = useState('home')
   const [mobileOpen, setMobileOpen] = useState(false)
   
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', dark)
-    localStorage.setItem('darkMode', dark.toString())
-  }, [dark])
-
+  
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['home', 'about', 'skills', 'projects', 'experience', 'workshops', 'contact']
