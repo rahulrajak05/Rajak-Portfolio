@@ -14,7 +14,7 @@ type Project = {
 
 const projects: Project[] = [
   { 
-    title: 'NextStep Learning Platform', 
+    title: 'NextStep-Your Pathway to Career Sucess Learning Platform', 
     associated: 'Pondicherry University', 
     description: 'NEXTSTEP is an AI-powered MERN platform that provides integrated tools for resume and cover-letter creation, job search, skill assessments, and interview preparation, offering a complete and streamlined career-readiness solution.',
     tags: ['React', 'Node.js', 'SQL', 'Express', 'JWT', 'REST API'], 
@@ -27,7 +27,7 @@ const projects: Project[] = [
       description: 'Modern, responsive portfolio website showcasing my projects and skills. Built with React, TypeScript, and Tailwind CSS with dark/light theme support and smooth animations.',
       tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Responsive Design'], 
       image: p2,
-      github: 'https://github.com/rahul/portfolio',
+      github: 'https://github.com/rahulrajak05/Rajak-Portfolio',
       status: 'completed'
     },
   
