@@ -28,30 +28,35 @@ export default function About() {
             
             <div className="space-y-6">
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Technical Skills</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <span className="text-primary text-xl">⚡</span>
-                    <span className="text-gray-700 dark:text-gray-300">JavaScript & Modern ES6+</span>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">What I Do</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-primary text-lg mt-1"></span>
+                    <div>
+                      <h4 className="font-medium text-gray-900 dark:text-white">Problem Solving</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">Converting complex requirements into elegant solutions</p>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="text-primary text-xl">🔧</span>
-                    <span className="text-gray-700 dark:text-gray-300">RESTful APIs & Database Design</span>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-primary text-lg mt-1"></span>
+                    <div>
+                      <h4 className="font-medium text-gray-900 dark:text-white">Innovation</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">Always exploring new technologies and best practices</p>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="text-primary text-xl">🚀</span>
-                    <span className="text-gray-700 dark:text-gray-300">Git Version Control & Agile Development</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="text-primary text-xl">☁️</span>
-                    <span className="text-gray-700 dark:text-gray-300">Cloud Integration & Deployment</span>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-primary text-lg mt-1"></span>
+                    <div>
+                      <h4 className="font-medium text-gray-900 dark:text-white">Growth Mindset</h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">Continuous learning and adapting to industry trends</p>
+                    </div>
                   </div>
                 </div>
               </div>
               
               <div className="bg-gradient-to-r from-primary/10 to-primary-dark/10 p-6 rounded-lg border border-primary/20">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic">
-                  "Constantly expanding my knowledge in backend development, cloud technologies, and software engineering principles to build better, more scalable solutions."
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic text-center">
+                  "Passionate about creating digital experiences that make a difference. Every line of code is an opportunity to solve real-world problems."
                 </p>
               </div>
             </div>

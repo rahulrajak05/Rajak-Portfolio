@@ -11,7 +11,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'workshops', 'contact']
+      const sections = ['home', 'about','education', 'skills', 'projects', 'experience' , 'workshops', 'contact']
       const scrollY = window.scrollY + 100
       
       for (const section of sections) {
@@ -33,6 +33,7 @@ export default function Navbar() {
   const links = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
+    { href: '#education', label: 'Education' },
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#experience', label: 'Experience' },
