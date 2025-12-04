@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react'
 
 export default function Navbar() {
-
   const [activeSection, setActiveSection] = useState('home')
   const [mobileOpen, setMobileOpen] = useState(false)
   
-  
+  useEffect(() => {
+    document.documentElement.classList.add('dark')
+    localStorage.setItem('darkMode', 'true')
+  }, [])
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['home', 'about', 'skills', 'projects', 'experience', 'workshops', 'contact']
@@ -38,7 +41,7 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur bg-white/70 dark:bg-gray-900/70 border-b border-gray-200 dark:border-white/10">
+    <header className="sticky top-0 z-50 backdrop-blur bg-gray-900/95 border-b border-white/10">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#home" className="text-xl font-bold text-primary">Rahul Kumar Rajak</a>
         
@@ -51,7 +54,7 @@ export default function Navbar() {
                 key={l.href} 
                 href={l.href} 
                 className={`text-sm transition-colors ${
-                  isActive ? 'text-primary' : 'text-gray-600 dark:text-white/80 hover:text-primary'
+                  isActive ? 'text-primary' : 'text-white/80 hover:text-primary'
                 }`}
               >
                 {l.label}
@@ -65,7 +68,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {mobileOpen && (
-        <nav className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-white/10">
+        <nav className="md:hidden bg-gray-900 border-t border-white/10">
           <div className="container mx-auto px-4 py-2 space-y-1">
             {links.map((l) => {
               const isActive = activeSection === l.href.slice(1)
@@ -75,7 +78,7 @@ export default function Navbar() {
                   href={l.href}
                   onClick={() => setMobileOpen(false)}
                   className={`block py-2 px-3 rounded-md text-sm transition-colors ${
-                    isActive ? 'text-primary bg-primary/10' : 'text-gray-600 dark:text-white/80 hover:text-primary hover:bg-gray-50 dark:hover:bg-white/5'
+                    isActive ? 'text-primary bg-primary/10' : 'text-white/80 hover:text-primary hover:bg-white/5'
                   }`}
                 >
                   {l.label}
