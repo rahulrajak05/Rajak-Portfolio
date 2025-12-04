@@ -1,4 +1,4 @@
-import aboutme from '../assets/about me.png';
+import aboutme from '../assets/about me.jpeg';
 export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center py-16 lg:py-24 relative overflow-hidden">

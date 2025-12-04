@@ -27,6 +27,7 @@ const projects: Project[] = [
       description: 'Modern, responsive portfolio website showcasing my projects and skills. Built with React, TypeScript, and Tailwind CSS with dark/light theme support and smooth animations.',
       tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Responsive Design'], 
       image: p2,
+      link: 'rajak-portfolio-c5ep.vercel.app',
       github: 'https://github.com/rahulrajak05/Rajak-Portfolio',
       status: 'completed'
     },
@@ -109,7 +110,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-white bg-primary hover:bg-primary-dark rounded-lg transition-colors"
                       >
-                        <span>🚀</span>
+                        <span></span>
                         <span>Live Demo</span>
                       </a>
                     )}

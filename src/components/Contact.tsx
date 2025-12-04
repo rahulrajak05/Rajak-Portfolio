@@ -70,48 +70,66 @@ export default function Contact() {
               </div>
               
               {/* Social Links */}
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-100 dark:border-gray-700">
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Follow Me</h3>
-                  <div className="w-12 h-0.5 bg-primary mx-auto mt-2 rounded-full"></div>
+              <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg border border-gray-100 dark:border-gray-700">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Connect With Me</h3>
+                  <div className="w-16 h-0.5 bg-primary mx-auto mt-3 rounded-full"></div>
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-4 gap-4">
                   <a 
                     href="https://www.linkedin.com/in/rahul-rajak1999/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 p-3 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary hover:bg-primary/5 transition-all"
+                    className="flex items-center justify-center p-5 rounded-xl border border-gray-200 dark:border-gray-600 hover:border-primary hover:bg-primary/5 transition-all duration-300 hover:scale-105 hover:shadow-md"
+                    title="LinkedIn Profile"
                   >
-                    <span className="font-medium text-gray-700 dark:text-gray-300">LinkedIn</span>
+                    <img 
+                      src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" 
+                      alt="LinkedIn" 
+                      className="w-8 h-8 dark:invert"
+                    />
                   </a>
                   
                   <a 
                     href="https://github.com/rahulrajak05" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 p-3 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary hover:bg-primary/5 transition-all"
+                    className="flex items-center justify-center p-5 rounded-xl border border-gray-200 dark:border-gray-600 hover:border-primary hover:bg-primary/5 transition-all duration-300 hover:scale-105 hover:shadow-md"
+                    title="GitHub Profile"
                   >
-                  
-                    <span className="font-medium text-gray-700 dark:text-gray-300">GitHub</span>
+                    <img 
+                      src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=000000" 
+                      alt="GitHub" 
+                      className="w-8 h-8 dark:invert"
+                    />
                   </a>
                   
                   <a 
                     href="https://leetcode.com/u/Rahul_Rajak/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 p-3 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary hover:bg-primary/5 transition-all"
+                    className="flex items-center justify-center p-5 rounded-xl border border-gray-200 dark:border-gray-600 hover:border-primary hover:bg-primary/5 transition-all duration-300 hover:scale-105 hover:shadow-md"
+                    title="LeetCode Profile"
                   >
-               
-                    <span className="font-medium text-gray-700 dark:text-gray-300">LeetCode</span>
+                    <img 
+                      src="https://img.icons8.com/?size=100&id=9L16NypUzu38&format=png&color=000000" 
+                      alt="LeetCode" 
+                      className="w-8 h-8 dark:invert"
+                    />
                   </a>
                   
                   <a 
                     href={RahulRajakResume} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 p-3 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary hover:bg-primary/5 transition-all"
+                    className="flex items-center justify-center p-5 rounded-xl border border-gray-200 dark:border-gray-600 hover:border-primary hover:bg-primary/5 transition-all duration-300 hover:scale-105 hover:shadow-md"
+                    title="Download Resume"
                   >
-                    <span className="font-medium text-gray-700 dark:text-gray-300">Resume</span>
+                    <img 
+                      src="https://img.icons8.com/?size=100&id=dpFxG4jUlRT6&format=png&color=000000" 
+                      alt="Resume" 
+                      className="w-8 h-8 dark:invert"
+                    />
                   </a>
                 </div>
               </div>
@@ -123,7 +141,7 @@ export default function Contact() {
               <span className="font-semibold">Open to opportunities!</span>
             </p>
             <p className="text-gray-600 dark:text-gray-400">
-              Currently seeking internship and entry-level positions in full-stack development
+              Currently seeking internship and entry-level positions in Mern-stack development
             </p>
           </div>
         </div>
