@@ -1,3 +1,4 @@
+import RahulRajakResume from '../assets/Rahul-Rajak.pdf';
 export default function Contact() {
   return (
     <section id="contact" className="py-16 lg:py-24 bg-gray-50 dark:bg-gray-900/50">
@@ -105,12 +106,11 @@ export default function Contact() {
                   </a>
                   
                   <a 
-                    href="/resume.pdf" 
+                    href={RahulRajakResume} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-3 rounded-lg border border-gray-200 dark:border-gray-600 hover:border-primary hover:bg-primary/5 transition-all"
                   >
-                   
                     <span className="font-medium text-gray-700 dark:text-gray-300">Resume</span>
                   </a>
                 </div>
