@@ -1,11 +1,16 @@
-const skillCategories = [
+interface SkillCategory {
+  category: string;
+  skills: string[];
+}
+
+const skillCategories: SkillCategory[] = [
   {
     category: "Frontend",
     skills: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Redux", "Vite"]
   },
   {
     category: "Backend", 
-    skills: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication", "Middleware","Python"]
+    skills: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication", "Middleware", "Python"]
   },
   {
     category: "Database",
@@ -33,10 +38,9 @@ export default function Skills() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-            {skillCategories.map((category, index) => (
+            {skillCategories.map((category) => (
               <div key={category.category} className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-100 dark:border-gray-700 group cursor-pointer">
                 <div className="text-center mb-6">
-                  
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-300">{category.category}</h3>
                 </div>
                 
