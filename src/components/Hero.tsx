@@ -1,5 +1,19 @@
 import aboutme from '../assets/about me.jpeg';
+import { useEffect, useState } from 'react';
 export default function Hero() {
+  const roles = [
+    'Mern-Stack Developer',
+    'Data Analysis',
+    'AI/ML'
+  ];
+  const [roleIndex, setRoleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRoleIndex((prev) => (prev + 1) % roles.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section id="home" className="min-h-screen flex items-center py-16 lg:py-24 relative overflow-hidden">
       {/* Animated Background */}
@@ -16,11 +30,17 @@ export default function Hero() {
             <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold tracking-tight font-display leading-tight">
               <span className="text-primary block">Hi, I'm</span> 
               <span className="text-gray-900 dark:text-white block">Rahul Rajak</span>
-              <span className="text-gray-700 dark:text-gray-300 block text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-medium mt-2">Mern-Stack Developer</span>
+              <span key={roleIndex} className="text-gray-700 dark:text-gray-300 block text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-medium mt-2 transition-opacity duration-500">{roles[roleIndex]}</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">
               MCA student passionate about creating exceptional digital experiences. Specialized in MERN stack development with a focus on building responsive, scalable, and user-friendly web applications.
             </p>
+          </div>
+          {/* Profile badges */}
+          <div className="flex flex-wrap gap-2 pt-2">
+            <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-medium">MERN Stack</span>
+            <span className="inline-block px-3 py-1 rounded-full bg-blue-100/60 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200/60 dark:border-blue-700/40 text-sm font-medium">Data Analysis</span>
+            <span className="inline-block px-3 py-1 rounded-full bg-purple-100/60 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 border border-purple-200/60 dark:border-purple-700/40 text-sm font-medium">AI/ML</span>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4">

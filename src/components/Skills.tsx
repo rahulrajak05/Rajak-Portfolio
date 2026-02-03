@@ -6,19 +6,25 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     category: "Frontend",
-    skills: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Redux", "Vite"]
+    skills: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS"]
   },
   {
     category: "Backend", 
-    skills: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication", "Middleware", "Python"]
+    skills: ["Node.js", "Express.js", "RESTful APIs","Python" ]
   },
+
   {
     category: "Database",
-    skills: ["MongoDB", "Mongoose", "Database Design", "Query Optimization"]
+    skills: ["MongoDB", "Database Design", "SQL"]
   },
   {
     category: "Tools & Others",
     skills: ["Git", "GitHub", "VS Code", "Postman", "npm", "Responsive Design"]
+  }
+  ,
+  {
+    category: "Data Analysis",
+    skills: ["Excel", "Power BI", "Pandas", "NumPy", "Matplotlib", "Seaborn"]
   }
 ]
 
@@ -37,7 +43,7 @@ export default function Skills() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
             {skillCategories.map((category) => (
               <div key={category.category} className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-100 dark:border-gray-700 group cursor-pointer">
                 <div className="text-center mb-6">

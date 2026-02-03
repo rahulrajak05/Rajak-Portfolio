@@ -1,5 +1,28 @@
 export default function Workshops() {
   const workshopPrograms = [
+    {
+      title: "Neurohack – Shaastra 2026",
+      organization: "Indian Institute of Technology Madras (IITM)",
+      duration: "Jan 2026 (Hackathon)",
+      description: "Participated in Neurohack at Shaastra 2026, IIT Madras's annual tech festival, working on AI/ML-driven problem solving and rapid prototyping in a competitive hackathon environment.",
+      impact: "Strengthened applied AI/ML skills, teamwork, and rapid solution building under time constraints.",
+      activities: [
+        "Problem ideation and solution design",
+        "Dataset preprocessing and feature engineering",
+        "Model training, evaluation, and iteration",
+        "Building a working demo and presentation",
+        "Collaboration and time-bound execution"
+      ],
+      technologies: [
+        "Python",
+        "NumPy",
+        "Pandas",
+        "Scikit-learn",
+        "TensorFlow",
+        "PyTorch"
+      ],
+      status: "completed"
+    },
    {
   "title": "Quizfinity – Quiz Competition",
   "organization": "Knowledge Institute of Technology (KIoT), Tamil Nadu",

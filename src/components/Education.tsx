@@ -42,9 +42,9 @@ export default function Education() {
                           2024 - 2026
                         </span>
                         <div className="mt-2">
-                          {/* <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 px-3 py-1 rounded-full text-sm font-medium">
-                            CGPA: 8.5/10
-                          </span> */}
+                          <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 px-3 py-1 rounded-full text-sm font-medium">
+                            CGPA: 6.61/10
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -208,7 +208,8 @@ export default function Education() {
             </div>
           </div>
 
-          {/* Additional Info */}
+          {/* Additional Info section commented out */}
+          {/*
           <div className="mt-12 text-center">
             <div className="bg-gradient-to-r from-primary/10 to-primary-dark/10 rounded-lg p-6 border border-primary/20">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
@@ -230,6 +231,7 @@ export default function Education() {
               </div>
             </div>
           </div>
+          */}
         </div>
       </div>
     </section>
