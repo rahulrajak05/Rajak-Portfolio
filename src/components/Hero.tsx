@@ -1,4 +1,5 @@
 import aboutme from '../assets/about me.jpeg';
+import profile from '../assets/profile.jpeg';
 import { useEffect, useState } from 'react';
 export default function Hero() {
   const roles = [
@@ -62,7 +63,7 @@ export default function Hero() {
           <div className="relative">
             <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700">
               <img 
-                src={aboutme} 
+                src={profile} 
                 alt="Rahul Kumar - Full Stack Developer" 
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" 
                 onError={(e) => {

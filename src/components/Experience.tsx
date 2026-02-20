@@ -9,7 +9,52 @@ type ExperienceItem = {
 }
 
 const experience: ExperienceItem[] = [
-  
+  {
+    role: 'Data Engineer Intern',
+    company: 'Puducherry Tourism Development Corporation Ltd.',
+    period: 'Feb 2026 — Present',
+    location: 'Puducherry, India (On-site)',
+    type: 'internship',
+    details: [
+      'Working on data engineering projects for tourism development initiatives',
+      'Managing and processing large datasets to support decision-making processes',
+      'Implementing ETL pipelines for data integration and transformation',
+      'Collaborating with cross-functional teams to deliver data-driven solutions',
+      'Contributing to the digital transformation of tourism services'
+    ],
+    technologies: ['Python', 'SQL', 'Data Analytics', 'Database Management', 'Data Visualization']
+  },
+  {
+    role: 'Software Web Development Project',
+    company: 'Contractum Integral Solution Private Limited',
+    period: 'Jan 2026 — Present',
+    location: 'Kota, Rajasthan, India (Hybrid)',
+    type: 'full-time',
+    details: [
+      'Developing comprehensive web applications for client projects',
+      'Building responsive and user-friendly interfaces using modern web technologies',
+      'Collaborating with team members in a hybrid work environment',
+      'Implementing best practices in software development and code quality',
+      'Working on end-to-end project delivery from requirements to deployment'
+    ],
+    technologies: ['JavaScript', 'React.js', 'Node.js', 'HTML5', 'Tailwind CSS', 'Git', 'MongoDB']
+  },
+  {
+    role: 'Data Engineer Intern',
+    company: 'MSME TECHNOLOGY CENTRE, PUDUCHERRY',
+    period: 'Sep 2025 — Dec 2025',
+    location: 'Puducherry, India (On-site)',
+    type: 'internship',
+    details: [
+      'Worked on data engineering projects supporting MSME technology initiatives',
+      'Developed data pipelines for collecting, processing, and analyzing industrial data',
+      'Assisted in database design and optimization for improved query performance',
+      'Created data reports and visualizations to support business intelligence',
+      'Gained hands-on experience with data engineering tools and technologies',
+      'Successfully completed 4-month internship contributing to multiple data projects'
+    ],
+    technologies: ['Python', 'SQL', 'Database Management', 'Data Analysis', 'Excel']
+  },
   { 
     role: 'MERN-Stack Developer', 
     company: 'Edunet Foundation', 
