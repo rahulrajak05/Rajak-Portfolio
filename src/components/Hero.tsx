@@ -1,6 +1,8 @@
 import aboutme from '../assets/about me.jpeg';
 import profile from '../assets/profile.jpeg';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+
 export default function Hero() {
   const roles = [
     'Mern-Stack Developer',
@@ -26,54 +28,128 @@ export default function Hero() {
       </div>
       
       <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center relative z-10">
-        <div className="space-y-6 lg:space-y-8">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="space-y-6 lg:space-y-8"
+        >
           <div className="space-y-4">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold tracking-tight font-display leading-tight">
-              <span className="text-primary block">Hi, I'm</span> 
-              <span className="text-gray-900 dark:text-white block">Rahul Rajak</span>
-              <span key={roleIndex} className="text-gray-700 dark:text-gray-300 block text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-medium mt-2 transition-opacity duration-500">{roles[roleIndex]}</span>
+              <motion.span 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+                className="text-primary block"
+              >
+                Hi, I'm
+              </motion.span> 
+              <motion.span 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+                className="text-gray-900 dark:text-white block"
+              >
+                Rahul Rajak
+              </motion.span>
+              <motion.span 
+                key={roleIndex} 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+                className="text-gray-700 dark:text-gray-300 block text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-medium mt-2"
+              >
+                {roles[roleIndex]}
+              </motion.span>
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl"
+            >
               MCA student passionate about creating exceptional digital experiences. Specialized in MERN stack development with a focus on building responsive, scalable, and user-friendly web applications.
-            </p>
+            </motion.p>
           </div>
           {/* Profile badges */}
-          <div className="flex flex-wrap gap-2 pt-2">
-            <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-medium">MERN Stack</span>
-            <span className="inline-block px-3 py-1 rounded-full bg-blue-100/60 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200/60 dark:border-blue-700/40 text-sm font-medium">Data Analysis</span>
-            <span className="inline-block px-3 py-1 rounded-full bg-purple-100/60 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 border border-purple-200/60 dark:border-purple-700/40 text-sm font-medium">AI/ML</span>
-          </div>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
+            className="flex flex-wrap gap-2 pt-2"
+          >
+            <motion.span 
+              whileHover={{ scale: 1.1, rotate: 2 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-medium cursor-pointer"
+            >
+              MERN Stack
+            </motion.span>
+            <motion.span 
+              whileHover={{ scale: 1.1, rotate: -2 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="inline-block px-3 py-1 rounded-full bg-blue-100/60 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200/60 dark:border-blue-700/40 text-sm font-medium cursor-pointer"
+            >
+              Data Analysis
+            </motion.span>
+            <motion.span 
+              whileHover={{ scale: 1.1, rotate: 2 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="inline-block px-3 py-1 rounded-full bg-purple-100/60 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 border border-purple-200/60 dark:border-purple-700/40 text-sm font-medium cursor-pointer"
+            >
+              AI/ML
+            </motion.span>
+          </motion.div>
           
-          <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <a 
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 0.6 }}
+            className="flex flex-col sm:flex-row gap-4 pt-4"
+          >
+            <motion.a 
               href="#projects" 
-              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-primary hover:bg-primary-dark rounded-lg shadow-soft transition-all duration-300 hover:shadow-lg hover:scale-105"
+              whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(59, 130, 246, 0.3)" }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-primary hover:bg-primary-dark rounded-lg shadow-soft transition-all duration-300"
             >
               View My Work
-            </a>
-            <a 
+            </motion.a>
+            <motion.a 
               href="#contact" 
-              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-600 hover:border-primary dark:hover:border-primary rounded-lg transition-all duration-300 hover:shadow-md"
+              whileHover={{ scale: 1.05, borderColor: "rgb(59, 130, 246)" }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-600 hover:border-primary dark:hover:border-primary rounded-lg transition-all duration-300"
             >
               Let's Connect
-            </a>
-          </div>
-        </div>
-        <div className="flex justify-center lg:justify-end">
+            </motion.a>
+          </motion.div>
+        </motion.div>
+        <motion.div 
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+          className="flex justify-center lg:justify-end"
+        >
           <div className="relative">
-            <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700">
+            <motion.div 
+              whileHover={{ scale: 1.05, rotate: 2 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-white dark:border-gray-700"
+            >
               <img 
                 src={profile} 
                 alt="Rahul Kumar - Full Stack Developer" 
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" 
+                className="w-full h-full object-cover" 
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = 'https://via.placeholder.com/400x400.png?text=Rahul+Kumar'
                 }} 
               />
-            </div>
+            </motion.div>
             
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

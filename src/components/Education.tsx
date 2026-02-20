@@ -1,29 +1,80 @@
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, x: -50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.6 }
+  }
+};
+
 export default function Education() {
   return (
     <section id="education" className="py-16 lg:py-24 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               My <span className="text-primary">Education</span>
             </h2>
-            <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
-            <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <motion.div 
+              initial={{ width: 0 }}
+              whileInView={{ width: 80 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="h-1 bg-primary mx-auto rounded-full"
+            ></motion.div>
+            <motion.p 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
+            >
               Academic journey and qualifications that shaped my foundation in computer science and technology
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
-          <div className="space-y-8">
+          <motion.div 
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            className="space-y-8"
+          >
             {/* PG Course - MCA */}
-            <div className="relative">
+            <motion.div 
+              variants={itemVariants}
+              className="relative"
+            >
               <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center shadow-lg">
                     <span className="text-white font-bold text-lg">🎓</span>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border-2 border-primary/20 dark:border-primary/30 hover:shadow-xl transition-all hover:border-primary/40">
+                <motion.div 
+                  whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(0,0,0,0.15)" }}
+                  className="flex-1"
+                >
+                  <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border-2 border-primary/20 dark:border-primary/30 transition-all">  
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                       <div>
                         <div className="flex items-center space-x-2 mb-2">
@@ -65,19 +116,25 @@ export default function Education() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
 
             {/* BCA */}
-            <div className="relative">
+            <motion.div 
+              variants={itemVariants}
+              className="relative"
+            >
               <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-lg">🎓</span>
                   </div>
                 </div>
-                <div className="flex-1">
+                <motion.div 
+                  whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(0,0,0,0.15)" }}
+                  className="flex-1"
+                >
                   <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                       <div>
@@ -115,19 +172,25 @@ export default function Education() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Intermediate (12th) */}
-            <div className="relative">
+            <motion.div 
+              variants={itemVariants}
+              className="relative"
+            >
               <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-primary/70 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-lg">🎓</span>
                   </div>
                 </div>
-                <div className="flex-1">
+                <motion.div 
+                  whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(0,0,0,0.15)" }}
+                  className="flex-1"
+                >
                   <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                       <div>
@@ -159,19 +222,25 @@ export default function Education() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Matriculation (10th) */}
-            <div className="relative">
+            <motion.div 
+              variants={itemVariants}
+              className="relative"
+            >
               <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-primary/50 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-lg">🎓</span>
                   </div>
                 </div>
-                <div className="flex-1">
+                <motion.div 
+                  whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(0,0,0,0.15)" }}
+                  className="flex-1"
+                >
                   <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                       <div>
@@ -203,10 +272,10 @@ export default function Education() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Additional Info section commented out */}
           {/*

@@ -1,3 +1,24 @@
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, x: -50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.6 }
+  }
+};
+
 type ExperienceItem = {
   role: string
   company: string
@@ -78,19 +99,47 @@ export default function Experience() {
     <section id="experience" className="py-16 lg:py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               Professional <span className="text-primary">Experience</span>
             </h2>
-            <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
-            <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <motion.div 
+              initial={{ width: 0 }}
+              whileInView={{ width: 80 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="h-1 bg-primary mx-auto rounded-full"
+            ></motion.div>
+            <motion.p 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
+            >
               My journey in web development through internships and freelance projects
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
-          <div className="space-y-8">
+          <motion.div 
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            className="space-y-8"
+          >
             {experience.map((exp, index) => (
-              <div key={exp.company + exp.role} className="relative">
+              <motion.div 
+                key={exp.company + exp.role} 
+                variants={cardVariants}
+                className="relative"
+              >
                 {/* Timeline line */}
                 {index !== experience.length - 1 && (
                   <div className="absolute left-6 top-16 w-0.5 h-full bg-gradient-to-b from-primary to-transparent"></div>
@@ -105,7 +154,10 @@ export default function Experience() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-100 dark:border-gray-700">
+                  <motion.div 
+                    whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(0,0,0,0.15)" }}
+                    className="flex-1 bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-100 dark:border-gray-700"
+                  >
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                       <div>
                         <h3 className="text-xl font-bold text-gray-900 dark:text-white">{exp.role}</h3>
@@ -143,17 +195,23 @@ export default function Experience() {
                         ))}
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
           
-          <div className="text-center mt-12">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            className="text-center mt-12"
+          >
             <p className="text-gray-600 dark:text-gray-400 mb-4">
               Currently seeking new opportunities to grow and contribute to innovative projects
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

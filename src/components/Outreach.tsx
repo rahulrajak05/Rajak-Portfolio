@@ -1,3 +1,24 @@
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6 }
+  }
+};
+
 export default function Workshops() {
   const workshopPrograms = [
     {
@@ -130,19 +151,47 @@ export default function Workshops() {
     <section id="workshops" className="py-16 lg:py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
               Workshops & <span className="text-primary">Programs</span>
             </h2>
-            <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
-            <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <motion.div 
+              initial={{ width: 0 }}
+              whileInView={{ width: 80 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="h-1 bg-primary mx-auto rounded-full"
+            ></motion.div>
+            <motion.p 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
+            >
               Continuous learning through professional workshops and training programs in cutting-edge technologies
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
-          <div className="space-y-8">
+          <motion.div 
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            className="space-y-8"
+          >
             {workshopPrograms.map((program, index) => (
-              <div key={program.title} className="relative">
+              <motion.div 
+                key={program.title} 
+                variants={cardVariants}
+                className="relative"
+              >
                 {/* Timeline line */}
                 {index !== workshopPrograms.length - 1 && (
                   <div className="absolute left-6 top-16 w-0.5 h-full bg-gradient-to-b from-primary to-transparent"></div>
@@ -157,7 +206,10 @@ export default function Workshops() {
                   </div>
                   
                   {/* Content */}
-                  <div className="flex-1 bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-100 dark:border-gray-700">
+                  <motion.div 
+                    whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(0,0,0,0.15)" }}
+                    className="flex-1 bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-100 dark:border-gray-700"
+                  >
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                       <div>
                         <h3 className="text-xl font-bold text-gray-900 dark:text-white">{program.title}</h3>
@@ -211,13 +263,19 @@ export default function Workshops() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
           
-          <div className="text-center mt-12 p-6 bg-gradient-to-r from-primary/10 to-primary-dark/10 rounded-lg border border-primary/20">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            className="text-center mt-12 p-6 bg-gradient-to-r from-primary/10 to-primary-dark/10 rounded-lg border border-primary/20"
+          >
             <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
               Continuous Learning & Professional Development
             </h3>
@@ -238,7 +296,7 @@ export default function Workshops() {
                 <span>Emerging Technologies</span>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
