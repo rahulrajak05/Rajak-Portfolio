@@ -78,7 +78,7 @@ export default function Education() {
                     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                       <div>
                         <div className="flex items-center space-x-2 mb-2">
-                          <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-semibold">CURRENT</span>
+                          {/* <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-semibold">CURRENT</span> */}
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 dark:text-white">
                           Master of Computer Applications (MCA)

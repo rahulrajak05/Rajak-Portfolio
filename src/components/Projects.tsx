@@ -2,6 +2,7 @@
 import p1 from '../assets/p1.png';
 import p3 from '../assets/p3.png';
 import p4 from '../assets/p4.png';
+import p6 from '../assets/p6.png';
 import { motion } from 'framer-motion';
 
 type Project = {
@@ -17,6 +18,18 @@ type Project = {
 
 const projects: Project[] = [
 
+{
+  title: 'IPL 2026 Winner Prediction System',
+  // associated: 'Pondicherry University',
+
+  description: 'A Machine Learning and Data Analytics based web application that analyzes IPL historical data (2008–2024) to predict match outcomes and forecast the IPL 2026 winner using advanced predictive models and interactive visualizations.',
+
+  tags: [
+    'Python', 'Pandas','NumPy', 'Matplotlib','Seaborn', 'Scikit-learn','XGBoost','LightGBM','Streamlit','Machine Learning'],
+  image: p6,
+  github: 'https://github.com/rahulrajak05/ipl-prediction-',
+  status: 'completed'
+},
 {
   title: 'Smart Vote – Online Election Management System',
   associated: 'Pondicherry University',

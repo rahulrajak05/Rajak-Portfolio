@@ -60,9 +60,9 @@ export default function About() {
                 variants={itemVariants}
                 className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
               >
-                Recently completed an <span className="font-semibold text-primary">internship at EduNet Foundation</span>, where I contributed to building responsive and scalable web applications using modern technologies and best practices.
+                Recently pursuing an <span className="font-semibold text-primary">internship at NIELIT Ranchi</span>, where I am gaining hands-on experience in emerging technologies, real-time project development, data analytics, and modern software development practices through the Work Based Learning (WBL) program.
               </motion.p>
-              
+
               <motion.div 
                 variants={itemVariants}
                 whileHover={{ scale: 1.02, boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}
