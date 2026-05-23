@@ -8,11 +8,11 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     category: "Frontend",
-    skills: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS"]
+    skills: ["React", "JavaScript",  "HTML5", "CSS3", "Tailwind CSS"]
   },
   {
     category: "Backend", 
-    skills: ["Node.js", "Express.js", "RESTful APIs","Python" ]
+    skills: ["Node.js", "Express.js", "Python" ]
   },
 
   {
@@ -21,12 +21,12 @@ const skillCategories: SkillCategory[] = [
   },
   {
     category: "Tools & Others",
-    skills: ["Git", "GitHub", "VS Code", "Postman", "npm", "Responsive Design"]
+    skills: ["Git", "GitHub"]
   }
   ,
   {
     category: "Data Analysis",
-    skills: ["Excel", "Power BI", "Pandas", "NumPy", "Matplotlib", "Seaborn"]
+    skills: ["Excel",  "Pandas", "NumPy", "Matplotlib", "Seaborn","Power BI", "Tableau"]
   }
 ]
 

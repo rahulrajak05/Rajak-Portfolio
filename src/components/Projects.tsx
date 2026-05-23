@@ -1,6 +1,7 @@
 
 import p1 from '../assets/p1.png';
-import p2 from '../assets/p2.png';
+import p3 from '../assets/p3.png';
+import p4 from '../assets/p4.png';
 import { motion } from 'framer-motion';
 
 type Project = {
@@ -15,6 +16,17 @@ type Project = {
 }
 
 const projects: Project[] = [
+
+{
+  title: 'Smart Vote – Online Election Management System',
+  associated: 'Pondicherry University',
+  description: 'Smart Vote is a MERN stack-based online election management system that enables secure digital voting, election management, duplicate vote prevention, and real-time result generation through a user-friendly web platform.',
+  tags: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT', 'REST API'],
+  image: p3,
+  github: 'https://github.com/rahulrajak05/election-management',
+  status: 'completed'
+},
+  
   { 
     title: 'NextStep-Your Pathway to Career Sucess Learning Platform', 
     associated: 'Pondicherry University', 
@@ -28,7 +40,7 @@ const projects: Project[] = [
       title: 'Portfolio Website', 
       description: 'Modern, responsive portfolio website showcasing my projects and skills. Built with React, TypeScript, and Tailwind CSS with dark/light theme support and smooth animations.',
       tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Responsive Design'], 
-      image: p2,
+      image: p4,
       link: 'rajak-portfolio-c5ep.vercel.app',
       github: 'https://github.com/rahulrajak05/Rajak-Portfolio',
       status: 'completed'

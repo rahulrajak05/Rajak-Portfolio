@@ -31,9 +31,28 @@ type ExperienceItem = {
 
 const experience: ExperienceItem[] = [
   {
+    role: 'Software Technology Intern',
+    company: 'National Institute of Electronics and Information Technology, Ranchi',
+    period: 'March 2026 — Present',
+    location: 'Ranchi, India (On-site)',
+    type: 'internship',
+    details: [
+  'Worked on real-time technical and software development projects',
+  'Participated in Work Based Learning (WBL) training programs and practical sessions',
+  'Developed problem-solving and analytical skills through hands-on project implementation',
+  'Collaborated with mentors and technical teams on emerging technology-based solutions',
+  'Contributed to web application and digital solution development activities',
+  'Gained practical exposure to industry-standard tools, workflows, and technologies'
+],
+
+technologies: [
+  'Python','JavaScript','React.js','Node.js','MongoDB','SQL','Data Analytics','Web Development','Machine Learning','AI'
+]
+  },
+   {
     role: 'Data Engineer Intern',
     company: 'Puducherry Tourism Development Corporation Ltd.',
-    period: 'Feb 2026 — Present',
+    period: 'Feb 2026 - March 2026',
     location: 'Puducherry, India (On-site)',
     type: 'internship',
     details: [
@@ -50,7 +69,7 @@ const experience: ExperienceItem[] = [
     company: 'Contractum Integral Solution Private Limited',
     period: 'Jan 2026 — Present',
     location: 'Kota, Rajasthan, India (Hybrid)',
-    type: 'full-time',
+    type: 'Part-time',
     details: [
       'Developing comprehensive web applications for client projects',
       'Building responsive and user-friendly interfaces using modern web technologies',

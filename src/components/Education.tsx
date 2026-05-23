@@ -94,7 +94,7 @@ export default function Education() {
                         </span>
                         <div className="mt-2">
                           <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 px-3 py-1 rounded-full text-sm font-medium">
-                            CGPA: 6.61/10
+                            CGPA: 6.88/10
                           </span>
                         </div>
                       </div>
