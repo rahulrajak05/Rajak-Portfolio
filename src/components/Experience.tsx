@@ -26,7 +26,7 @@ type ExperienceItem = {
   location: string
   details: string[]
   technologies: string[]
-  type: 'internship' | 'freelance' | 'full-time'
+  type: 'internship' | 'freelance' | 'full-time' | 'part-time'
 }
 
 const experience: ExperienceItem[] = [
@@ -69,7 +69,7 @@ technologies: [
     company: 'Contractum Integral Solution Private Limited',
     period: 'Jan 2026 — Present',
     location: 'Kota, Rajasthan, India (Hybrid)',
-    type: 'Part-time',
+    type: 'part-time',
     details: [
       'Developing comprehensive web applications for client projects',
       'Building responsive and user-friendly interfaces using modern web technologies',
@@ -168,7 +168,7 @@ export default function Experience() {
                   {/* Timeline dot */}
                   <div className="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg">
                     <span className="text-white font-bold text-sm">
-                      {exp.type === 'internship' ? '🎓' : exp.type === 'freelance' ? '💼' : '🏢'}
+                      {exp.type === 'internship' ? '🎓' : exp.type === 'freelance' || exp.type === 'part-time' ? '💼' : '🏢'}
                     </span>
                   </div>
                   
@@ -186,7 +186,7 @@ export default function Experience() {
                       <div className="mt-2 sm:mt-0 flex items-center space-x-2">
                         <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                           exp.type === 'internship' ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400' :
-                          exp.type === 'freelance' ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400' :
+                          exp.type === 'freelance' || exp.type === 'part-time' ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400' :
                           'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-400'
                         }`}>
                           {exp.type.charAt(0).toUpperCase() + exp.type.slice(1)}

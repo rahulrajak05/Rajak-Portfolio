@@ -1,4 +1,3 @@
-import aboutme from '../assets/about me.jpeg';
 import profile from '../assets/profile.jpeg';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';

@@ -78,7 +78,7 @@ const projectCardVariants = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.6, ease: "easeOut" }
+    transition: { duration: 0.6, ease: 'easeOut' as const }
   }
 };
 
