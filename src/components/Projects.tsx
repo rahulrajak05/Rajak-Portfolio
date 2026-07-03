@@ -1,6 +1,6 @@
 
 import p1 from '../assets/p1.png';
-import p3 from '../assets/p3.png';
+// import p3 from '../assets/p3.png';
 import p4 from '../assets/p4.png';
 import p6 from '../assets/p6.png';
 import { motion } from 'framer-motion';
