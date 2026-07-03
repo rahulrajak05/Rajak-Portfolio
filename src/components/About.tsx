@@ -62,7 +62,7 @@ export default function About() {
               >
                 Recently pursuing an <span className="font-semibold text-primary">internship at NIELIT Ranchi</span>, where I am gaining hands-on experience in emerging technologies, real-time project development, data analytics, and modern software development practices through the Work Based Learning (WBL) program.
               </motion.p>
-
++
               <motion.div 
                 variants={itemVariants}
                 whileHover={{ scale: 1.02, boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}
