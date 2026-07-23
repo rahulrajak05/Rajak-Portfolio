@@ -53,14 +53,14 @@ export default function About() {
                 variants={itemVariants}
                 className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
               >
-                I'm a <span className="font-semibold text-primary">MCA student at Pondicherry University</span> with a passion for creating innovative digital solutions. My journey in technology has been driven by curiosity and a commitment to continuous learning.
+               I'm an <span className="font-semibold text-primary">Associate Professor – Data Analytics at Physics Wallah (PW)</span> with a strong background in Data Analytics, Python, SQL, Microsoft Excel, Power BI, and Machine Learning. I am passionate about empowering students through practical, industry-oriented learning while building innovative, scalable, and data-driven digital solutions.
               </motion.p>
               
               <motion.p 
                 variants={itemVariants}
                 className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
               >
-                Recently pursuing an <span className="font-semibold text-primary">internship at NIELIT Ranchi</span>, where I am gaining hands-on experience in emerging technologies, real-time project development, data analytics, and modern software development practices through the Work Based Learning (WBL) program.
+                Currently working as an <span className="font-semibold text-primary">Associate Professor – Data Analytics at Physics Wallah (PW)</span>, where I deliver industry-focused training in Python, SQL, Microsoft Excel, Power BI, Statistics, and Machine Learning. I mentor students through hands-on projects, develop practical learning content, and help learners build job-ready skills for careers in data analytics and business intelligence.
               </motion.p>
 +
               <motion.div 
@@ -69,9 +69,9 @@ export default function About() {
                 className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-l-4 border-primary"
               >
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Core Expertise</h3>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <span className="font-semibold text-primary">Full-Stack Development (MERN)</span> – I specialize in building responsive and efficient web applications using MongoDB, Express.js, React, and Node.js.
-                </p>
+               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+  <span className="font-semibold text-primary">Data Analytics & Full-Stack Development</span> – I specialize in data analysis using Python, SQL, Excel, Power BI, and Machine Learning, while also developing responsive, scalable web applications with the MERN Stack (MongoDB, Express.js, React, and Node.js).
+</p>
               </motion.div>
             </motion.div>
             

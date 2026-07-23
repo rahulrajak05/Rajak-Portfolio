@@ -30,10 +30,29 @@ type ExperienceItem = {
 }
 
 const experience: ExperienceItem[] = [
+  
   {
+  role: 'Associate Professor – Data Analytics',
+  company: 'Physics Wallah (PW)',
+  period: 'July 2026 — Present',
+  location: 'India',
+  type: 'full-time',
+  details: [
+    'Deliver lectures on Data Analytics, Microsoft Excel, SQL, Python, Power BI, and Statistics.',
+    'Develop industry-oriented curriculum, assignments, and practical learning materials.',
+    'Mentor students through real-world data analytics projects and case studies.',
+    'Conduct live classes, doubt-solving sessions, and technical assessments.',
+    'Train students in data visualization, business intelligence, and machine learning fundamentals.',
+    'Prepare students for internships, placements, and technical interviews using industry best practices.'
+  ],
+
+  technologies: ['Python','SQL', 'Microsoft Excel', 'Power BI', 'Statistics', 'Pandas','NumPy','Matplotlib','Power Bi'
+  ]
+},
+{
     role: 'Software Technology Intern',
     company: 'National Institute of Electronics and Information Technology, Ranchi',
-    period: 'March 2026 — Present',
+    period: 'March 2026 — July',
     location: 'Ranchi, India (On-site)',
     type: 'internship',
     details: [
@@ -49,12 +68,14 @@ technologies: [
   'Python','JavaScript','React.js','Node.js','MongoDB','SQL','Data Analytics','Web Development','Machine Learning','AI'
 ]
   },
+
+
    {
-    role: 'Data Engineer Intern',
+    role: 'Data Analytics Intern',
     company: 'Puducherry Tourism Development Corporation Ltd.',
     period: 'Feb 2026 - March 2026',
     location: 'Puducherry, India (On-site)',
-    type: 'internship',
+   type: 'internship',
     details: [
       'Working on data engineering projects for tourism development initiatives',
       'Managing and processing large datasets to support decision-making processes',
@@ -64,27 +85,13 @@ technologies: [
     ],
     technologies: ['Python', 'SQL', 'Data Analytics', 'Database Management', 'Data Visualization']
   },
+  
   {
-    role: 'Software Web Development Project',
-    company: 'Contractum Integral Solution Private Limited',
-    period: 'Jan 2026 — Present',
-    location: 'Kota, Rajasthan, India (Hybrid)',
-    type: 'part-time',
-    details: [
-      'Developing comprehensive web applications for client projects',
-      'Building responsive and user-friendly interfaces using modern web technologies',
-      'Collaborating with team members in a hybrid work environment',
-      'Implementing best practices in software development and code quality',
-      'Working on end-to-end project delivery from requirements to deployment'
-    ],
-    technologies: ['JavaScript', 'React.js', 'Node.js', 'HTML5', 'Tailwind CSS', 'Git', 'MongoDB']
-  },
-  {
-    role: 'Data Engineer Intern',
+    role: 'Data Engineer',
     company: 'MSME TECHNOLOGY CENTRE, PUDUCHERRY',
     period: 'Sep 2025 — Dec 2025',
     location: 'Puducherry, India (On-site)',
-    type: 'internship',
+     type: 'part-time',
     details: [
       'Worked on data engineering projects supporting MSME technology initiatives',
       'Developed data pipelines for collecting, processing, and analyzing industrial data',
