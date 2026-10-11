@@ -219,7 +219,7 @@ export default function Contact() {
             </div>
           </motion.div>
           
-          <motion.div 
+          {/* <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -230,9 +230,9 @@ export default function Contact() {
               <span className="font-semibold">Open to opportunities!</span>
             </p>
             <p className="text-gray-600 dark:text-gray-400">
-              Currently seeking internship and entry-level positions in Mern-stack development
+              Currently seeking internship and entry-level opportunities in MERN Stack development.
             </p>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

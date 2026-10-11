@@ -68,7 +68,7 @@ export default function Hero() {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl"
             >
-             Associate Professor – Data Analytics at Physics Wallah (PW), specializing in Python, SQL, Excel, Power BI, and Machine Learning. Passionate about teaching, data-driven solutions, and building scalable, user-friendly web applications using the MERN stack.
+           Associate Professor – Data Analytics at Physics Wallah (PW), with expertise in Python, SQL, Microsoft Excel, Power BI, and Machine Learning. Experienced in delivering data analytics training, developing interactive dashboards, and applying data-driven approaches to solve business problems. Passionate about Generative AI, analytical problem-solving, and translating complex data into actionable business insights.
             </motion.p>
           </div>
           {/* Profile badges */}
@@ -78,27 +78,27 @@ export default function Hero() {
             transition={{ delay: 0.8, duration: 0.6 }}
             className="flex flex-wrap gap-2 pt-2"
           >
-            {/* <motion.span 
+            <motion.span 
               whileHover={{ scale: 1.1, rotate: 2 }}
               transition={{ type: "spring", stiffness: 300 }}
               className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-medium cursor-pointer"
             >
-              MERN Stack
-            </motion.span> */}
+              Data Science
+            </motion.span>
             <motion.span 
               whileHover={{ scale: 1.1, rotate: -2 }}
               transition={{ type: "spring", stiffness: 300 }}
               className="inline-block px-3 py-1 rounded-full bg-blue-100/60 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200/60 dark:border-blue-700/40 text-sm font-medium cursor-pointer"
             >
-             Data Analytics
+             Data Analytics With Gen AI
             </motion.span>
-            {/* <motion.span 
+            <motion.span 
               whileHover={{ scale: 1.1, rotate: 2 }}
               transition={{ type: "spring", stiffness: 300 }}
               className="inline-block px-3 py-1 rounded-full bg-purple-100/60 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 border border-purple-200/60 dark:border-purple-700/40 text-sm font-medium cursor-pointer"
             >
               AI/ML
-            </motion.span> */}
+            </motion.span>
           </motion.div>
           
           <motion.div 

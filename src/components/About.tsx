@@ -53,15 +53,15 @@ export default function About() {
                 variants={itemVariants}
                 className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
               >
-               I'm an <span className="font-semibold text-primary">Associate Professor – Data Analytics at Physics Wallah (PW)</span> with a strong background in Data Analytics, Python, SQL, Microsoft Excel, Power BI, and Machine Learning. I am passionate about empowering students through practical, industry-oriented learning while building innovative, scalable, and data-driven digital solutions.
+              I'm an <span className="font-semibold text-primary">Associate Professor – Data Analytics at Physics Wallah (PW)</span>, specializing in Python, SQL, Microsoft Excel, Power BI, and Machine Learning. I focus on delivering practical, industry-oriented training, developing interactive dashboards, and leveraging Generative AI and data-driven approaches to transform complex data into actionable business insights.
               </motion.p>
               
-              <motion.p 
+              {/* <motion.p 
                 variants={itemVariants}
                 className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
               >
                 Currently working as an <span className="font-semibold text-primary">Associate Professor – Data Analytics at Physics Wallah (PW)</span>, where I deliver industry-focused training in Python, SQL, Microsoft Excel, Power BI, Statistics, and Machine Learning. I mentor students through hands-on projects, develop practical learning content, and help learners build job-ready skills for careers in data analytics and business intelligence.
-              </motion.p>
+              </motion.p> */}
 +
               <motion.div 
                 variants={itemVariants}
@@ -70,8 +70,8 @@ export default function About() {
               >
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Core Expertise</h3>
                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-  <span className="font-semibold text-primary">Data Analytics & Full-Stack Development</span> – I specialize in data analysis using Python, SQL, Excel, Power BI, and Machine Learning, while also developing responsive, scalable web applications with the MERN Stack (MongoDB, Express.js, React, and Node.js).
-</p>
+                  <span className="font-semibold text-primary">Data Analytics & Full-Stack Development</span> – I specialize in data analysis using Python, SQL, Excel, Power BI, and Machine Learning, while also developing responsive, scalable web applications with the MERN Stack (MongoDB, Express.js, React, and Node.js).
+                </p>
               </motion.div>
             </motion.div>
             

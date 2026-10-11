@@ -101,18 +101,23 @@ export default function Education() {
                     </div>
                     <div className="text-gray-700 dark:text-gray-300">
                       <p className="mb-3">
-                        <span className="font-semibold">Specialization:</span> Mern Stack Development, Advanced Database Systems, 
-                        Software Project Management, Machine Learning,AI, Automata
+                        <span className="font-semibold">Specialization:</span>{" "}
+                         Data Analytics, Generative AI, Machine Learning,
+                         Artificial Intelligence, Advanced Database Systems
                       </p>
                       <div className="flex flex-wrap gap-2 mb-3">
-                        <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 px-2 py-1 rounded text-xs">DSA</span>
-                        <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 px-2 py-1 rounded text-xs">Mern Stack</span>
+                        <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 px-2 py-1 rounded text-xs">Data Analytics With Gen AI</span>
+                        <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 px-2 py-1 rounded text-xs">Data Science</span>
                         <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 px-2 py-1 rounded text-xs">ML/AI</span>
                         <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 px-2 py-1 rounded text-xs">Database</span>
                         <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 px-2 py-1 rounded text-xs">Python</span>
                       </div>
                       <p className="text-sm italic">
-                        Currently pursuing advanced studies in computer applications with focus on modern web technologies and software engineering practices.
+                        MCA graduate from Pondicherry University, currently working
+                        as an Associate Professor – Data Analytics at Physics Wallah.
+                        Focused on data analysis, visualization, dashboard development,
+                        machine learning, and Generative AI to transform data into
+                        meaningful business insights.
                       </p>
                     </div>
                   </div>
